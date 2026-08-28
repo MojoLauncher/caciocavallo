@@ -68,7 +68,7 @@ public class CTCToolkit extends CacioToolkit {
         if (platformWindowFactory == null) {
           CTCScreen screen = CTCScreen.getInstance();
           CTCEventSource eventSource = CTCEventSource.getInstance();
-          platformWindowFactory = new FullScreenWindowFactory(screen, eventSource);
+          platformWindowFactory = new NotifierWindowFactory(screen, eventSource);
         }
         return platformWindowFactory;
     }
